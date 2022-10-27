@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 public class Nomor_1 extends JPanel {
     
     protected void paintComponent(Graphics g) {
-       super.paintComponent(g);
+       super.paintComponent(g);       
        
        int[] x1 = { 50, 100, 100, 50, 50, 100};
        int[] y1 = { 50, 100, 100, 100, 100, 50};
@@ -47,6 +47,9 @@ public class Nomor_1 extends JPanel {
        g.fillPolygon(x3, y3, 6);
        g.setColor(Color.BLACK);
        g.drawPolygon(x3, y3, 6);
+       
+       g.setColor(Color.BLACK);
+       g.drawRoundRect(25, 25, 300, 100, 20, 20);
     }
 
     public static void main(String[] args) {
